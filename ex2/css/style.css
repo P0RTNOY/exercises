@@ -1,0 +1,222 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	height: 123px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	text-decoration: none;
+}
+
+.logo-image {
+	background-image: url('../images/shark.png');
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 40px;
+}
+
+.logo-text {
+	font-weight: 700;
+	font-size: 32px;
+	letter-spacing: 0.25em;
+	color: black;
+	font-family: cursive;
+}
+
+#section1 {
+	background-color: #f9bdbd;
+	height: 555px;
+	display: flex;
+	align-items: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 83px;
+	padding-bottom: 84px;
+}
+
+#section2 {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.about {
+	width: 741px;
+	padding-bottom: 83px;
+}
+
+.about span {
+	margin-bottom: 20px;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 140.62%;
+	text-align: justify;
+	color: #000000;
+	display: block;
+}
+
+#section1 .image {
+	height: 100%;
+	width: 500px;
+	background-image: url(../images/double\ omer\ and\ ruben.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.section1-text {
+	margin-left: 30px;
+	width: 448px;
+	height: 100%;
+}
+
+.section11-text {
+	margin-left: 30px;
+	width: 100%;
+	height: 100%;
+}
+.section1-text .title {
+	margin-bottom: 30px;
+	display: block;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 49px;
+	color: #3e3f43;
+	font-family: 'Nunito';
+}
+.section1-text .text {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 33px;
+	color: #000000;
+	font-family: 'Nunito';
+}
+
+#heading {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 40px;
+	color: #000000;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	display: block;
+}
+
+.cards {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 40px;
+}
+.cards #card {
+	height: 264px;
+	width: 200px;
+	border-radius: 30px;
+	display: inline-block;
+	padding: 24px;
+	display: grid;
+}
+#card img {
+	border-radius: 50px;
+}
+#card a {
+	background: #ffffff;
+	border-radius: 30px;
+	width: 120px;
+	text-align: center;
+	text-decoration: none;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 32px;
+}
+#card span {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+#card a:hover {
+	background-color: #000000;
+}
+.card1 {
+	background-color: #fdede5;
+}
+.card1 a:hover {
+	color: #fdede5;
+}
+.card2 {
+	background-color: #ebf1ff;
+}
+.card2 a:hover {
+	color: #ebf1ff;
+}
+.card3 {
+	background-color: #ebffec;
+}
+.card3 a:hover {
+	color: #ebffec;
+}
+.card4 {
+	background-color: #ffebfc;
+}
+.card4 a:hover {
+	color: #ffebfc;
+}
+.card5 {
+	background-color: #fffeeb;
+}
+.card5 a:hover {
+	color: #fffeeb;
+}
+
+.list {
+	margin-left: 24px;
+	margin-bottom: 40px;
+}
+
+.choice .content {
+	background-color: #f9bdbd;
+	height: 508px;
+}
+
+footer {
+	margin-top: 271px;
+	height: 301px;
+	border-radius: 0px;
+	background-color: lightgray;
+	padding-top: 32px;
+	padding-left: 40px;
+	font-family: 'Nunito';
+}
+
+footer a {
+	color: #8d8d8d;
+	width: 200px;
+}
+.link {
+	text-decoration: none;
+	display: block;
+	margin-bottom: 16px;
+}
+
+.rights {
+	margin-top: auto;
+	color: #8d8d8d;
+}
