@@ -1,40 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css/style.css" />
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nunito&family=Rubik:wght@300;700&display=swap"
-          rel="stylesheet"
-        />
-        <title>layout3</title>
-      </head>
+
+<head>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Rubik:wght@300;700&display=swap"
+    rel="stylesheet" />
+  <title>layout3</title>
+  <style>
+    @media screen and (max-width: 851px) {
+
+.wrapper3{
+  flex-direction: column;
+}
+#header {
+  height: 120px;
+  width:100%;
+}
+
+#header button {
+  font-size: 14px;
+}
+
+#left-side {
+  width:100%;
+  height:105px;
+  color: black;
+  background-color: lightgray;
+  height:80px;
+ 
+  top:0;
+  gap: 18px;
+}
+.right-side {
+  display: none;
+}
+
+.yellow-big-rec{
+  height:474px;
+  width:100%;
+}
+#game-zone{
+ 
+  width:100%;
+  left:0;
+  top:100px;
+  bottom:0;
+
+}
+
+}
+  </style>
+</head>
 <body>
-    <div id="desktop">
-        <header>
-            <section id="header"></section>
-        </header>
-        <div class="wrapper3">
-            <section id="left-side">
-                <a href="index.html">
-                    <span>MIX</span>
-                  </a>
-                  <a href="layout2.html">
-                    <span>STAIRS</span>
-                  </a>
-                  <a href="layout3.html">
-                    <div class="red-dot"></div>
-                    <span>DYNAMIC</span>
-                  </a>
-            </section>
-            <div class="right-side"></div>
-            <div class="yellow-big-rec"></div>
-            <footer class="black-footer"></footer>
-        </div>
+  <div id="desktop">
+    <header>
+      <section id="header">
+        <button id="resetButton">RESET</button>
+        <button class="click-box" onclick="createSquares()"></button>
+      </section>
+    </header>
+    <div class="wrapper3">
+      <div id="left-side">
+        <a href="index.html">
+          <span>MIX</span>
+        </a>
+        <a href="layout2.html">
+          <span>STAIRS</span>
+        </a>
+        <a href="layout3.html">
+          <div class="red-dot"></div>
+          <span>DYNAMIC</span>
+        </a>
+      </div>
+      <div id="game-zone"></div>
+      <div class="right-side"></div>
     </div>
+    <div class="yellow-big-rec"></div>
+    <footer class="black-footer"></footer>
+  </div>
+  <script src="./js/scripts.js"></script>
 </body>
 </html>
