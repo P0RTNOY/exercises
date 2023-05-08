@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Character</title>
+    <style>
+        .character-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.character-preview img {
+    height: 200px;
+    margin: 0 20px;
+    transition: all 0.5s ease-in-out;
+}
+    </style>
+</head>
+<body>
+    <h1>Edit Character</h1>
+    
+    <form method="get" action="http://se.shenkar.ac.il/students/2022-2023/web1/dev_67/exercises/ex4/edit.php">
+        <label for="char_type">Character Type:</label>
+        <select name="char_type" id="char_type">
+            <option value="none" selected disabled hidden>Select characther</option>
+            <option value="Dark Knight">Dark Knight</option>
+            <option value="Muze Elf">Muze Elf</option>
+            <option value="Soul Master">Soul Master</option>
+        </select>
+
+        <label for="char_clothing">Clothing Set:</label>
+        <select name="char_clothing" id="char_clothing">
+            <option value="none" selected disabled hidden>Select a clothing set</option>
+            <optgroup label="Dark Knight">
+                <option value="Dark Black">Dark Black</option>
+                <option value="Dark Phoenix">Dark Phoenix</option>
+                <option value="Great Master">Great Master</option>
+            </optgroup>
+
+            <optgroup label="Muze Elf" style="display:none;">
+                <option value="Divine">Divine</option>
+                <option value="Red Great">Red Great</option>
+                <option value="Silk">Silk</option>
+            </optgroup>
+
+            <optgroup label="Soul Master" style="display:none;">
+                <option value="Legendary">Legendary</option>
+                <option value="White Divine">White Divine</option>
+                <option value="Great Soul">Great Soul</option>
+            </optgroup>
+        </select>
+
+        <label for="char_weapon">Weapon:</label>
+        <select name="char_weapon" id="char_weapon">
+            <option value="none" selected disabled hidden>Select a weapon</option>
+            <optgroup label="Dark Knight">
+                <option value="Blade Knight">Blade Knight</option>
+                <option value="Destruction Sword">Destruction Sword</option>
+            </optgroup>
+
+
+            <optgroup label="Muze Elf" style="display:none;">
+                <option value="Great Bow">Great Bow</option>
+                <option value="Crossbow">Crossbow</option>
+            </optgroup>
+
+
+            <optgroup label="Soul Master" style="display:none;">
+                <option value="Kundun Staff">Kundun Staff</option>
+                <option value="Legendary Staff">Legendary Staff</option>
+            </optgroup>
+        </select>
+        <input type="submit" value="Save Character">
+    </form>
+    <script>
+    const charTypeSelect = document.getElementById("char_type");
+const charClothSelect = document.getElementById("char_clothing");
+const charWeaponSelect = document.getElementById("char_weapon");
+const clothingSets = document.querySelectorAll("optgroup[label]");
+const weapons = document.querySelectorAll("optgroup[label] option");
+
+charTypeSelect.addEventListener("change", function() {
+
+  charClothSelect.value = "none";
+  for (let i = 0; i < clothingSets.length; i++) {
+    if (clothingSets[i].label === this.value) {
+      clothingSets[i].style.display = "block";
+    } else {
+      clothingSets[i].style.display = "none";
+    }
+  }
+
+
+  charWeaponSelect.value = "none";
+  for (let i = 0; i < weapons.length; i++) {
+    if (weapons[i].parentNode.label === this.value) {
+      weapons[i].style.display = "block";
+    } else {
+      weapons[i].style.display = "none";
+    }
+  }
+});
+      </script>
+      
+</body>
+</html>
+
+
+
+               
